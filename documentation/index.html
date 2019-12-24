@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation - Raven</title>
+    <meta name="description" content="Au theme template">
+    <meta name="keywords" content="Au theme template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Styles-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700,800,600,300" rel="stylesheet">
+    <!--Theme style-->
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="header-wrapper">
+            <div class="container text-center">
+                <a id="logo" href="#">
+                    <img rel="Highend" src="img/logo.png">
+                </a>
+                <strong>Version:</strong>
+                <span>1.0 |</span>
+                <strong>Last update:</strong>
+                <span>08 May 2017</span>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <ul class="docs-nav">
+            <li>
+                <strong>Introduction</strong>
+            </li>
+            <li>
+                <a class="cc-active active" href="#getting-started">Getting Started</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#html-structure">HTML Structure</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#logo-settings">Logo</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#chaning-fonts">Fonts</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#sliders">Sliders</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#helpers">Helper Classes</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#php">Contact Form</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#grid">Grid</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#browser-support">Browser Support</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#credits">Source & Credits</a>
+            </li>
+        </ul>
+        <div class="docs-content">
+            <div class="docs-content-inner">
+                <section id="getting-started">
+                    <h1>Introduction</h1>
+                    <p>Thank you for purchasing RAVEN template!</p>
+                    <p>
+                        This documentation will give you an understanding of how RAVEN is structured and guide you in performing common functions. If you require further assistance not covered in this documentation.
+                    </p>
+                    <p>If you need custom customization, please contact us from here:
+                        <a href="https://themeforest.net/user/aucreative">https://themeforest.net/user/aucreative</a>
+                    </p>
+                    <p>Thank you so much!</p>
+                    <p>AU CREATIVE</p>
+                    <p>&nbsp;</p>
+                    <h1 id="Installation">Getting Started</h1>
+                    <h4>What&apos;s Included</h4>
+                    <p>Once you have download the package you will see the following folder structure in &quot;
+                        <strong>template</strong>&quot; Folder</p>
+                    <div id="default-tree">
+                        <ul>
+                            <li>
+                                <strong>css</strong>- Main Stylesheet Files</li>
+                            <li>
+                                <strong>fonts</strong>- Fonts file and css for fonts</li>
+                            <li>
+                                <strong>images</strong>- Images Files</li>
+                            <li>
+                                <strong>scripts</strong>- Javacripts Folder</li>
+                            <li>
+                                <strong>includes</strong>- PHP Files (contact form, ... etc)</li>
+                            <li>
+                                <strong>vendor</strong>- Vendor Files (jquery, bootstrap etc)</li>
+                        </ul>
+                    </div>
+                    <p>In order to use in your website, you need to upload template files (
+                        <strong>inside the folder www</strong>) to your web server with the help of one of the FTP-clients (for example, WinSCP or Total Commander etc).</p>
+                </section>
+                <section id="html-structure">
+                    <h1>HTML Structure</h1>
+                    <p>RAVEN template is based on Bootstrap Framework (
+                        <a href="http://getbootstrap.com/">http://getbootstrap.com/</a>) Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</p>
+                    <p>Below is a sample coding structure:</p>
+                    <pre class="brush: html;">&lt;!DOCTYPE html&gt;
+
+&lt;html lang="en-US"&gt;
+
+&lt;head&gt;
+<!-- Page meta, page css, page js files, page title etc... -->
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    <!-- HEADER -->
+    <header>
+
+        ...
+
+    </header>
+    <!-- END: HEADER -->
+
+    <!-- SECTION -->
+    <section>
+            <div class="container">
+
+                ...
+
+            </div>
+    </section>
+    <!-- END: SECTION -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+
+                ...
+
+            </div>
+        </div>
+    </footer>
+    <!-- END: FOOTER -->
+
+
+  &lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+                </section>
+                <section id="logo-settings">
+                    <h1>Logo Settings</h1>
+                    <p>Default site logo is placed inside<code>header</code> container.</p>
+                    <pre class="brush: html;"><!--HEADER-->
+<header class="">
+
+    <!--HEADER MAIN-->
+    <div class="rv-navbar">
+
+        <div class="container">
+            <div class="rv-navbar-inner">
+                <div class="rv-navbar-menu">
+
+                    <!--LOGO-->
+                    <div class="logo">
+                        <a href="index.html">
+                            <span>RAVEN</span>
+                        </a>
+                     </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+
+</pre>
+                </section>
+                <section id="chaning-fonts">
+                    <h1>Changing Fonts</h1>
+                    <p>By default RAVEN Template uses Two fonts from google library:<code>'Source Sans Pro'</code> and<code>'Dosis'</code> from the
+                        <a target="_blank" href="http://www.google.com/fonts">Google Fonts Library</a>
+                    </p>
+                    <p>If you wish to add/change the site fonts, please take a look in the<code>head</code> part of the website and you will find this tag:</p>
+                    <pre class="brush: html"><!-- LOAD GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet"></pre>
+                    <p>To include new font you can simply add another line like this:</p>
+                    <pre class="brush: html"><!-- LOAD GOOGLE FONTS -->
+<link href="http://fonts.googleapis.com/css?family=Lato:400,300,800,700,600" rel="stylesheet" type="text/css"></pre>
+                    <p>Or add an<code>|</code> seperator and paste<code>Lato:400,300,800,700,600</code> after default website fonts link.</p>
+                </section>
+                <section id="sliders">
+                    <h1>Sliders</h1>
+                    <p>RAVEN includes 2 different sliders that gives you all the options they need.
+                        <ul>
+                            <li>
+                                <strong>Revolution Slider:</strong>
+                                <span>is an awesome animated slider that creates eye-catching sliders.</span>
+                            </li>
+                            <li>
+                                <strong>Owl Slider:</strong>
+                                <span>Is an touch enabled jQuery plugin that lets you create beautiful responsive carousel slider.</span>
+                            </li>
+                        </ul>
+                    </p>
+                    <br/>
+                    <br/>
+                    <h4>Revolution Slider</h4>
+                    <p>Please find the full online documentation of Revolution Slider
+                        <a href="http://www.themepunch.com/revsliderjquery-doc/slider-revolution-jquery-5-x-documentation/" target="_blank">here</a>
+                    </p>
+                    <br/>
+                    <br/>
+                    <h4>Owl Slider</h4>
+                    <p>This excellent carousel slider can be controled usuing HTML5 data attirbutes, see the full list below:
+                        <ul>
+                            <li><code>data-carousel-lg</code> - The columns in large desktop screen size, default value is
+                                <strong>3 columns</strong>
+                            </li>
+                            <li><code>data-carousel-md</code> - The columns in laptop screen size, default value is
+                                <strong>2 columns</strong>
+                            </li>
+                            <li><code>data-carousell-sm</code> - The columns in tablet screen size, default value is
+                                <strong>1 columns</strong>
+                            </li>
+                            <li><code>data-carousel-xs</code> - The columns in mobile screen size, default value is
+                                <strong>1 columns</strong>
+                            </li>
+                            <li><code>data-carousel-items</code> - Set size items for slider, default value is
+                                <strong>1 items</strong>
+                            </li>
+                            <li><code>data-carousel-autoplay</code> - Set autoplay status for slider, default value is
+                                <strong>true</strong>
+                            </li>
+                            <li><code>data-carousel-nav</code> - Set nav status for slider, default value is
+                                <strong>false</strong>
+                            </li>
+                            <li><code>data-carousel-loop</code> - Set loop status for slider, default value is
+                                <strong>true</strong>
+                            </li>
+                            <li><code>data-carousel-dots</code> - Set dots status for slider, default value is
+                                <strong>true</strong>
+                            </li>
+                            <li><code>data-carousel-margin</code> - Set margin for slider, default value is
+                                <strong>0</strong>
+                            </li>
+                            <li><code>data-carousel-center</code> - Center slider, default value is
+                                <strong>"false"</strong>
+                            </li>
+                        </ul>
+                    </p>
+                    <p>Advanced customization of file<code>owl-custom.js</code>
+                    </p>
+                    <p>The full documentation of OWl Slider can be found
+                        <a href="http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html" target="_blank">here</a>
+                    </p>
+                </section>
+                <section id="helpers">
+                    <h1>Helpers</h1>
+                    <br/>
+                    <p>RAVEN helper css classes allow you to build your custom layout without touching any CSS code</p>
+                    <p>These classes are generic helper classes predifined in the CSS of pages, here is quick view what they can do</p>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-condensed table-striped">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Class</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>.show</code>
+                                    </td>
+                                    <td>display: block !important;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.hidden</code>
+                                    </td>
+                                    <td>display: none !important;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.hidden-big-desktop</code>
+                                    </td>
+                                    <td>display: none; hidden big desktop</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.hidden-medium-desktop</code>
+                                    </td>
+                                    <td>display: none; on medium desktop</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.hidden-tablet-landscape</code>
+                                    </td>
+                                    <td>display: none; on tablet landscape</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.hidden-tablet-portrait</code>
+                                    </td>
+                                    <td>display: none; on tablet portrait</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.hidden-phone</code>
+                                    </td>
+                                    <td>display: none; on phone</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br/>
+                    <br/>
+                    <h4>Margins</h4>
+                    <p>You can add this helper class to any element in your HTML code to set Margins</p>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-condensed table-striped">
+                            <thead>
+                                <tr>
+                                    <th>First Prefix ( m-*)</th>
+                                    <th>Second Prefix(m-t/b/l/r-*)</th>
+                                    <th>Last Prefix(m-t-$value)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>m for margin</td>
+                                    <td>t : top, b : bottom, l : left, r : right</td>
+                                    <td>5,10,15,20, ... 150</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>example :</p><code>m-t-10</code>
+                    <span>which means Margin Top 10px</span>
+                    <br/><code>m-b-20</code>
+                    <span>which means Margin Bottom 20px</span>
+                    <br/><code>m-l-5</code>
+                    <span>which means Margin Left 5px</span>
+                    <br/><code>m-r-35</code>
+                    <span>which means Margin Right 35px</span>
+                    <br/>
+                    <p>
+                        <label class="label label-danger">Note:</label>Value can not be anything, 1,2,4,5,6. It has a step of 5px, eg: 5,10,15
+                    </p>
+                    <p>Other options:</p>
+                    <p>To remove margin from a HTML element add the class<code>no-margin</code>
+                    </p>
+                    <br/>
+                    <br/>
+                    <h4>Paddings</h4>
+                    <p>You can add this helper class to any element in your HTML code to set paddings</p>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-condensed table-striped">
+                            <thead>
+                                <tr>
+                                    <th>First Prefix ( p-*)</th>
+                                    <th>Second Prefix(p-t/b/l/r-*)</th>
+                                    <th>Last Prefix(p-t-$value)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p for padding</td>
+                                    <td>t : top, b : bottom, l : left, r : right</td>
+                                    <td>5,10,15,20, ... 150</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>example :</p><code>p-t-10</code>
+                    <span>which means padding Top 10px</span>
+                    <br/><code>p-b-20</code>
+                    <span>which means padding Bottom 20px</span>
+                    <br/><code>p-l-5</code>
+                    <span>which means padding Left 5px</span>
+                    <br/><code>p-r-35</code>
+                    <span>which means padding Right 35px</span>
+                    <br/>
+                    <p>
+                        <label class="label label-danger">Note:</label>Value can not be anything, 1,2,4,5,6. It has a step of 5px, eg: 5,10,15
+                    </p>
+                </section>
+                <section id="php">
+                    <h1>Contact form</h1>
+                    <p>You need to modify email address on contact-form.php in includes folder, line 5</p>
+                    <pre class="brush: html;">$to = "info@yourdomain.com";</pre>
+                    <p>with your or company contact email address.</p>
+                    <p></p>
+                    <labe class="label label-danger">Note:</labe>
+                    <span>Your server must support php send<code>mail()</code>function to make contact form work properly</span>
+                </section>
+                <section id="grid">
+                    <h1>Grid</h1>
+                    <p>Bootstrap grid includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins
+                        for generating more semantic layouts</p>
+                    <p>Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the Bootstrap grid system works:</p>
+                    <ul>
+                        <li>You must start with<code>row</code>
+                        </li>
+                        <li>There are pre-define classes of columns starting from 1 to 12, example<code>col-md-1</code> to<code>col-md-12</code>
+                        </li>
+                        <li>Each of these value represent a percentage of the screen, 1 being the smallest and 12 being 100%</li>
+                        <li>You can create different grid pattern that finally forms 12</li>
+                    </ul>
+                    <p>For more information about Bootstrap, visit:
+                        <a href="http://getbootstrap.com/">http://getbootstrap.com/</a>
+                    </p>
+                    <p>example :</p>
+                    <pre class="brush: html;"><div class="row">
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">.col-md-8</div>
+    <div class="col-md-4">.col-md-4</div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">.col-md-6</div>
+    <div class="col-md-6">.col-md-6</div>
+</div></pre>
+                    <br/>
+                    <p></p>
+                    <span class="label label-danger">Note</span>Bootstrap includes different grids for different screen sizes, "col-md" md stands for medium screen, the following table explains:
+                    <div class="table-responsive"></div>
+                    <table class="table table-bordered table-striped"></table>
+                    <thead></thead>
+                    <tr></tr>
+                    <th></th>
+                    <th></th>Extra small devices
+                    <small>Phones (
+                        <768px)</small>
+                            <th></th>Small devices
+                            <small>Tablets (≥768px)</small>
+                            <th></th>Medium devices
+                            <small>Desktops (≥992px)</small>
+                            <th></th>Large devices
+                            <small>Desktops (≥1200px)</small>
+                            <tbody></tbody>
+                            <tr></tr>
+                            <th class="text-nowrap">Grid behavior</th>
+                            <td>Horizontal at all times</td>
+                            <td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+                            <tr></tr>
+                            <th class="text-nowrap">Container width</th>
+                            <td>None (auto)</td>
+                            <td>750px</td>
+                            <td>970px</td>
+                            <td>1170px</td>
+                            <tr></tr>
+                            <th class="text-nowrap">Class prefix</th>
+                            <td></td><code>.col-xs-</code>
+                            <td></td><code>.col-sm-</code>
+                            <td></td><code>.col-md-</code>
+                            <td></td><code>.col-lg-</code>
+                            <tr></tr>
+                            <th class="text-nowrap"># of columns</th>
+                            <td colspan="4">12</td>
+                            <tr></tr>
+                            <th class="text-nowrap">Column width</th>
+                            <td class="text-muted">Auto</td>
+                            <td>~62px</td>
+                            <td>~81px</td>
+                            <td>~97px</td>
+                            <tr></tr>
+                            <th class="text-nowrap">Gutter width</th>
+                            <td colspan="4">30px (15px on each side of a column)</td>
+                            <tr></tr>
+                            <th class="text-nowrap">Nestable</th>
+                            <td colspan="4">Yes</td>
+                            <tr></tr>
+                            <th class="text-nowrap">Offsets</th>
+                            <td colspan="4">Yes</td>
+                            <tr></tr>
+                            <th class="text-nowrap">Column ordering</th>
+                            <td colspan="4">Yes</td>
+                </section>
+                <section id="browser-support">
+                    <h1>Browser Support</h1>
+                    <p>RAVEN is built keeping mind to support a wide range of browsers and devices. We all major browers Google Chrome, Mozilla Firefox, Safari, Opera, Internet Explorer 9 and Above</p>
+                    <p></p>
+                    <br/>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-condensed">
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <th>Chrome</th>
+                                    <th>Firefox</th>
+                                    <th>Internet Explorer</th>
+                                    <th>Opera</th>
+                                    <th>Safari</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Android</th>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-muted" rowspan="3" style="vertical-align: middle;">N/A</td>
+                                    <td class="text-danger">
+                                        <span class="glyphicon glyphicon-remove"></span>Not Supported</td>
+                                    <td class="text-muted">N/A</td>
+                                </tr>
+                                <tr>
+                                    <th>iOS</th>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-muted">N/A</td>
+                                    <td class="text-danger">
+                                        <span class="glyphicon glyphicon-remove"></span>Not Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                </tr>
+                                <tr>
+                                    <th>Mac OS X</th>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                </tr>
+                                <tr>
+                                    <th>Windows</th>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-danger">
+                                        <span class="glyphicon glyphicon-remove"></span>Not Supported</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section id="credits">
+                    <h1>Source & Credits</h1>
+                    <p>All images are only for demonstration purpose, however you can re-download them in sites below. Almost all (not including overclothing.com, Daniel Zenda, Freepik etc...) images are released free of copyrights under Creative Commons
+                        CC0.</p>
+                    <br/>
+                    <br/>
+                    <h4>Images & Mockups</h4>
+                    <ul>
+                        <li>All Free Stocks
+                            <a target="_blank" href="allthefreestock.com">http://allthefreestock.com</a>
+                        </li>
+                        <li>Pexels
+                            <a target="_blank" href="https://www.pexels.com/">https://www.pexels.com/</a>
+                        </li>
+                    </ul>
+                    <br/>
+                    <br/>
+                    <h4>Scripts</h4>
+                    <ul>
+                        <li>Revolution Slider
+                            <a target="_blank" href="http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848">http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848</a>- (Premium - Incuded with template, free license using inside RAVEN Template)</li>
+                        <li>jQuery
+                            <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a>
+                        </li>
+                        <li>Owl Carousel v2
+                            <a target="_blank" href="http://www.owlcarousel.owlgraphic.com/">http://www.owlcarousel.owlgraphic.com/</a>
+                        </li>
+                        <li>jquery-accordion
+                            <a target="_blank" href="https://vctrfrnndz.github.io/jquery-accordion/">https://vctrfrnndz.github.io/jquery-accordion/</a>
+                        </li>
+                        <li>jQuery Nice Select
+                            <a target="_blank" href="http://wicky.nillia.ms/headroom.js/">http://wicky.nillia.ms/headroom.js/</a>
+                        </li>
+                        <li>headroom.js
+                            <a target="_blank" href="http://wicky.nillia.ms/headroom.js/">http://wicky.nillia.ms/headroom.js/</a>
+                        </li>
+                        <li>jquery mmenu
+                            <a target="_blank" href="http://mmenu.frebsite.nl/examples.html">http://mmenu.frebsite.nl/examples.html</a>
+                        </li>
+                        <li>Masonry Layout
+                            <a target="_blank" href="http://masonry.desandro.com/">http://masonry.desandro.com/</a>
+                        </li>
+                        <li>jQuery Accordion
+                            <a target="_blank" href="https://vctrfrnndz.github.io/jquery-accordion/">https://vctrfrnndz.github.io/jquery-accordion/</a>
+                        </li>
+                    </ul>
+                    <br/>
+                    <br/>
+                    <h4>CSS & Fonts</h4>
+                    <ul>
+                        <li>Bootstrap Framework
+                            <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a>
+                        </li>
+                        <li>Animation
+                            <a target="_blank" href="http://daneden.github.io/animate.css/">http://daneden.github.io/animate.css/</a>
+                        </li>
+                        <li>Font Awesome
+                            <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a>
+                        </li>
+                        <li>Google Fonts
+                            <a target="_blank" href="https://www.google.com/fonts">https://www.google.com/fonts</a>
+                        </li>
+                        <li>css hamburgers
+                            <a target="_blank" href="https://jonsuh.com/hamburgers/">https://jonsuh.com/hamburgers/</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- Javascript-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script type="text/javascript" src="vendor/syntaxhighlighter/scripts/shCore.js"></script>
+    <script type="text/javascript" src="vendor/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="vendor/syntaxhighlighter/scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="vendor/syntaxhighlighter/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="vendor/syntaxhighlighter/scripts/shBrushXml.js"></script>
+    <link type="text/css" rel="stylesheet" href="vendor/syntaxhighlighter/styles/shCoreDefault.css">
+    <script>
+        SyntaxHighlighter.all();
+    </script>
+</body>
+
+</html>
